@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt();
+    let str = a.toString();
+    let newString = [str[0]];
+    for(let i = 0 ; i < str.length ; i++){
+        if(str[i]%2 == 0 && str[i+1]%2 == 0){
+            newString.push('-',str[i+1]);
+        }else newString.push(str[i+1]);
+    }
+    document.write(newString.join(''));
+</script>
+</body>
+</html>
